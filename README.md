@@ -1,0 +1,1 @@
+# Configuracao de nova estrutura para estudos remotos
