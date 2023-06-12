@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../buttons/Button";
-import "./style.scss";
+import style from "./style.module.scss";
 
 class Formulario extends React.Component {
   render(): React.ReactNode {
     return (
-      <form className="novaTarefa">
-        <div className="inputContainer" style={{ padding: "2px 0px" }}>
+      <form className={style.novaTarefa}>
+        <div className={style.inputContainer} style={{ padding: "2px 0px" }}>
           <label htmlFor="tarefa">
             <strong>Tarefa: </strong>
           </label>
@@ -18,7 +18,7 @@ class Formulario extends React.Component {
             placeholder="Tarefa da Fila"
           />
         </div>
-        <div className="inputContainer" style={{ padding: "2px 0px" }}>
+        <div className={style.inputContainer} style={{ padding: "2px 0px" }}>
           <label htmlFor="tempo">
             <strong>Tempo: </strong>
           </label>
@@ -32,7 +32,7 @@ class Formulario extends React.Component {
             required
           />
         </div>
-        <Button />
+        <Button>Adicionar Tarefa</Button>
       </form>
     );
   }
